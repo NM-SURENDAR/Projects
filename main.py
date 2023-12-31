@@ -1,7 +1,4 @@
 from tkinter import *
-from page1 import *
-from page2 import *
-from page3 import *
 def main():
     root = Tk()
     root.configure(bg="sky blue")
