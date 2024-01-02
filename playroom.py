@@ -7,8 +7,8 @@ def main():
     root.geometry("1366x768")
     root.configure(bg="sky blue")
 
-    label1 = Label(root, text="Welcome", fg="yellow",bg="sky blue", width=10, font="times 30 bold", height=5)
-    label1.place(x=683, y=100, anchor="center")
+    label1 = Label(root, text="Welcome", fg="yellow",bg="dark blue", width=57, font="times 30 bold", height=2)
+    label1.place(x=683, y=50, anchor="center")
 
     label2 = Label(root, text="Let's play Rock, Paper, Scissor--click your choice!", fg="blue",bg="sky blue",width=40, height=3, font="times 20 bold")
     label2.place(x=683, y=300, anchor="center")
