@@ -1,5 +1,5 @@
 from tkinter import *
-import play
+from play import *
 
 def main():
     root = Tk()
