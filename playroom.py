@@ -24,7 +24,7 @@ def main():
     btn3 = Button(root, text="SCISSOR", font="times 20 bold", command=lambda:result("scissor"), fg="#4267B2", bg="white", padx=20, pady=15)
     btn3.place(x=1000, y=400)
 
-    btn4 = Button(root, text="EXIT", font="times 20 bold", command=lambda:exit(), fg="red", bg="white", padx=20, pady=15)
+    btn4 = Button(root, text="EXIT", font="times 20 bold", command=lambda:exit(user_score,computer_score), fg="red", bg="white", padx=20, pady=15)
     btn4.place(x=600, y=600)
     #functions
     def declare_result(result,u_input,c_input):#show a quick result for each match
@@ -33,16 +33,16 @@ def main():
         top.geometry("450x250")
         top.title("result")
         
-        lb1=Label(top,text="your input:"+u_input,fg="yellow",bg="sky blue",font="times 20 bold",width=50)
+        lb1=Label(top,text="your input:"+u_input,fg="blue",bg="sky blue",font="times 20 bold",width=50)
         lb1.pack()
         
-        lb1=Label(top,text="computer input:"+c_input,fg="yellow",bg="sky blue",font="times 20 bold",width=50)
+        lb1=Label(top,text="computer input:"+c_input,fg="blue",bg="sky blue",font="times 20 bold",width=50)
         lb1.pack()
         
-        lb1=Label(top,text=result,fg="yellow",bg="sky blue",font="times 35 bold",width=100)
+        lb1=Label(top,text=result,fg="blue",bg="sky blue",font="times 35 bold",width=100)
         lb1.pack()
         
-        btn1 = Button(top, text="ROCK", font="times 20 bold", command=lambda:top.destroy(), fg="#4267B2", bg="white", padx=20, pady=15)
+        btn1 = Button(top, text="Try again", font="times 20 bold", command=lambda:top.destroy(), fg="green", bg="white", padx=20, pady=15)
         btn1.pack()
 
     def result(u_input):#calculte a result based on inputs
@@ -69,6 +69,6 @@ def main():
             elif c_input=="rock":
                 declare_result("Computer Win",u_input,c_input)    
 # running the main loop
-root.mainloop()    
+    root.mainloop()    
 if __name__ == '__main__':
     main()
