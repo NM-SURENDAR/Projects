@@ -1,5 +1,5 @@
 
-def play(input):
+def result(input):
     print("your choice is"+input)
     return
 def exit():
