@@ -73,6 +73,7 @@ def final_scores(u_score,c_score):#show final scores and exit mainloop
     lb1=Label(top1,text="Computer score:"+str(c_score),fg="green",bg="sky blue",font="times 20 bold",width=50)
     lb1.pack()
     top1.mainloop()
+#mian_function
 u_score=0
 c_score=0 
 root = Tk()
@@ -97,7 +98,6 @@ btn3.place(x=1000, y=400)
 btn4 = Button(root, text="Scores", font="times 20 bold", command=lambda:final_scores(u_score,c_score), fg="red", bg="white", padx=20, pady=15)
 btn4.place(x=683, y=600, anchor="center") 
     
-    # running the main loop
+# running the main loop
 root.mainloop()    
-    #functions
    
