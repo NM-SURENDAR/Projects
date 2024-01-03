@@ -96,8 +96,7 @@ btn3 = Button(root, text="SCISSOR", font="times 20 bold", command=lambda:result(
 btn3.place(x=1000, y=400)
     
 btn4 = Button(root, text="Scores", font="times 20 bold", command=lambda:final_scores(u_score,c_score), fg="red", bg="white", padx=20, pady=15)
-btn4.place(x=683, y=600, anchor="center") 
-    
+btn4.place(x=683, y=600, anchor="center")  
 # running the main loop
 root.mainloop()    
    
