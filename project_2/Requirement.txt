@@ -1,0 +1,9 @@
+Project Requirements
+Tkinter Library:
+The code requires the Tkinter library for creating the graphical user interface.
+
+qrcode Library:
+The code relies on the qrcode library for generating QR codes.
+
+OS Module:
+The os module is used for handling file-related operations, such as creating directories.
