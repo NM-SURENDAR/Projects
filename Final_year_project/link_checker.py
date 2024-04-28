@@ -2,9 +2,9 @@ import pyperclip
 import time
 from urllib.parse import urlparse  # For basic URL validation
 import requests
-
-# Replace with your VirusTotal API key
-API_KEY = None
+import os
+API_KEY = os.environ.get("VIRUSTOTAL_API_KEY")
+# Rest of  code using the API_KEY variable for VirusTotal API calls
 BASE_URL = "https://www.virustotal.com/api/v3/urls"
 
 def is_valid_url(url):
