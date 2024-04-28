@@ -4,7 +4,7 @@ from urllib.parse import urlparse  # For basic URL validation
 import requests
 
 # Replace with your VirusTotal API key
-API_KEY = "e908f05e51704199328146695624c5c021132ff454104a62db03d16a01d0025d"
+API_KEY = None
 BASE_URL = "https://www.virustotal.com/api/v3/urls"
 
 def is_valid_url(url):
