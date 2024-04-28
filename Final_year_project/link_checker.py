@@ -52,7 +52,7 @@ def main():
           # No need to notify about non-URL content (optional)
           # You can uncomment this if you want to inform about non-URLs
           # print(f"Copied Content: {new_clipboard_content} (Not a URL)")
-    except KeyboardInterru
+    except KeyboardInterrupt:
       print("\nExiting program...")
       break
 
